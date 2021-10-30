@@ -1,0 +1,21 @@
+.application {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.transaction {
+  margin: auto;
+  padding: 20px;
+  background: aliceblue;
+  width: 565px;
+  display: block;
+}
+
+.history {
+  border: 1px solid red;
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  padding: 10px;
+}
