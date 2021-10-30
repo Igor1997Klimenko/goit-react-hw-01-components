@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
 
-const Profile = ({ name, tag, location, avatar, stats }) => (
+const Profile = (props) => {
+    const { name, tag, location, avatar, stats } = props;
+    return(
         <div className={styles.profile}>
             <div className={styles.description}>
                 <img
@@ -32,7 +34,8 @@ const Profile = ({ name, tag, location, avatar, stats }) => (
                 </li>
             </ul>
         </div>
-    );
+        )
+   }
 
     
 Profile.propTypes = {

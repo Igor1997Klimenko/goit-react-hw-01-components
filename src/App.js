@@ -8,17 +8,17 @@ import friends from '../src/components/FriendList/friends.json'
 import TransactionHistory from '../src/components/TransactionHistory/TransactionHistory'
 import transactions from '../src/components/TransactionHistory/transactions.json'
 const App = () => (
-<>
+    <>
     <Profile
   name={user.name}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-        />,
-    <Statistics title="Upload stats" stats={statisticalData} />,
-    <FriendList friends={friends} />,
-    <TransactionHistory items={transactions} />,
+    />,
+<Statistics title="Upload stats" stats={statisticalData} />,
+<FriendList friends={friends} />,
+<TransactionHistory items={transactions} />,
 </>
     
 );
