@@ -1,13 +1,18 @@
-import User from './components/User/User';
-import './App.css';
+import './App.css'
+import Profile from './components/Profile/Profile'
+import user from '../src/components/Profile/user.json'
 
-function App() {
-  <User/>
-  return (
-    <div className="App">
-      <h1>Lesson</h1>
-    </div>
-  );
-}
+const App = () => (
+<>
+    <Profile
+  name={user.name}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+    />
+</>
+    
+);
 
 export default App;
