@@ -4,7 +4,7 @@ import styles from './Profile.module.css';
 
 
 const Profile = (props) => {
-    const { name, tag, location, avatar, stats } = props;
+    const { name, tag, location, avatar, stats: {followers, views, likes} } = props;
     return(
         <div className={styles.profile}>
             <div className={styles.description}>
@@ -22,15 +22,15 @@ const Profile = (props) => {
             <ul className={styles.stats}>
                 <li>
                     <span className={styles.label}>Followers</span>
-                    <span className={styles.quantity}>{stats.followers}</span>
+                    <span className={styles.quantity}>{followers}</span>
                 </li>
                 <li>
                     <span className={styles.label}>Views</span>
-                    <span className={styles.quantity}>{stats.views}</span>
+                    <span className={styles.quantity}>{views}</span>
                 </li>
                 <li>
                     <span className={styles.label}>Likes</span>
-                    <span className={styles.quantity}>{stats.likes}</span>
+                    <span className={styles.quantity}>{likes}</span>
                 </li>
             </ul>
         </div>
