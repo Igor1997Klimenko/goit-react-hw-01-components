@@ -8,7 +8,7 @@ import friends from '../src/components/FriendList/friends.json'
 import TransactionHistory from '../src/components/TransactionHistory/TransactionHistory'
 import transactions from '../src/components/TransactionHistory/transactions.json'
 const App = () => (
-    <>
+  <>
     <Profile
   name={user.name}
   tag={user.tag}
@@ -22,5 +22,4 @@ const App = () => (
 </>
     
 );
-
 export default App;
